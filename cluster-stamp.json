@@ -40,54 +40,22 @@
             }
         },
         "location": {
-            "defaultValue": "eastus2",
+            "defaultValue": "canadacentral",
             "type": "string",
             "allowedValues": [
-                "australiaeast",
-                "canadacentral",
-                "centralus",
-                "eastus",
-                "eastus2",
-                "westus2",
-                "francecentral",
-                "germanywestcentral",
-                "northeurope",
-                "southafricanorth",
-                "southcentralus",
-                "uksouth",
-                "westeurope",
-                "japaneast",
-                "southeastasia"
+                "canadaeast",
+                "eastus2"
             ],
             "metadata": {
                 "description": "AKS Service, Node Pool, and supporting services (KeyVault, App Gateway, etc) region.  The network team maintains this approved regional list which is a subset of zones with Availability Zone support."
             }
         },
         "geoRedundancyLocation": {
-            "defaultValue": "centralus",
+            "defaultValue": "canadaeast",
             "type": "string",
             "allowedValues": [
-                "australiasoutheast",
                 "canadaeast",
-                "eastus2",
-                "westus",
-                "centralus",
-                "westcentralus",
-                "francesouth",
-                "germanynorth",
-                "westeurope",
-                "ukwest",
-                "northeurope",
-                "japanwest",
-                "southafricawest",
-                "northcentralus",
-                "eastasia",
-                "eastus",
-                "westus2",
-                "francecentral",
-                "uksouth",
-                "japaneast",
-                "southeastasia"
+                "centralus"
             ],
             "metadata": {
                 "description": "For Azure resources that support native geo-redunancy, provide the location the redundant service will have its secondary. Should be different than the location parameter and ideally should be a paired region - https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions. This region does not need to support availability zones."
